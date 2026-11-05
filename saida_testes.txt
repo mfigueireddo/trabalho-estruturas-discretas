@@ -1,0 +1,22 @@
+test_circuito_com_subciclos (__main__.TestesComplementares.test_circuito_com_subciclos)
+Dois triângulos com vértice em comum: o Hierholzer precisa encaixar subciclos. ... ok
+test_circuito_com_vertices_isolados (__main__.TestesComplementares.test_circuito_com_vertices_isolados) ... ok
+test_gerar_grafo_extremos (__main__.TestesComplementares.test_gerar_grafo_extremos) ... ok
+test_gerar_grafo_reprodutivel (__main__.TestesComplementares.test_gerar_grafo_reprodutivel) ... ok
+test_gerar_grafo_simples (__main__.TestesComplementares.test_gerar_grafo_simples) ... ok
+test_k5_euleriano (__main__.TestesComplementares.test_k5_euleriano)
+K5: todos os graus são 4, então é Euleriano. ... ok
+test_valida_circuito_rejeita_invalidos (__main__.TestesComplementares.test_valida_circuito_rejeita_invalidos) ... ok
+test_grafo_com_euler_C4 (__main__.TestesObrigatorios.test_grafo_com_euler_C4)
+C4: deve encontrar um circuito válido. ... ok
+test_grafo_desconexo_dois_ciclos (__main__.TestesObrigatorios.test_grafo_desconexo_dois_ciclos)
+Dois C3 separados: graus pares, mas desconexo, então não é Euleriano. ... ok
+test_grafo_vazio (__main__.TestesObrigatorios.test_grafo_vazio)
+Sem arestas: tratado explicitamente como rede inválida. ... ok
+test_vertices_impares_P4 (__main__.TestesObrigatorios.test_vertices_impares_P4)
+P4: os extremos têm grau 1, então não há circuito de Euler. ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK

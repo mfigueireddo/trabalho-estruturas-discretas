@@ -1,0 +1,101 @@
+[debug] Iniciando programa...
+
+=================================
+ETAPA 1: PRIMEIRO GRAFO EULERIANO
+=================================
+
+[debug] Iniciando busca pelo primeiro grafo Euleriano (n=10, p=0.3, seed=1376)...
+[debug] 500 grafos gerados, nenhum Euleriano ainda...
+[debug] 1000 grafos gerados, nenhum Euleriano ainda...
+[debug] Grafo Euleriano encontrado após 1347 grafos.
+
+[debug] Busca concluída. Imprimindo resultado da etapa 1...
+
+--- Parâmetros da geração dos grafos ---
+Número de vértices: 10
+Probabilidade p: 0.30
+Seed: 1376
+
+--- Resultado da busca ---
+Grafo Euleriano encontrado!
+Número de grafos gerados até encontrá-lo: 1347
+
+--- Arestas do grafo Euleriano encontrado (14) ---
+(1,2) (1,4) (2,8) (3,7) (3,8) (3,9) (3,10) (4,6) (5,7) (5,8)
+(6,8) (7,8) (7,9) (8,10)
+
+--- Grau de cada vértice do grafo Euleriano encontrado ---
+v1: 2
+v2: 2
+v3: 4
+v4: 2
+v5: 2
+v6: 2
+v7: 4
+v8: 6
+v9: 2
+v10: 2
+
+--- Lista de adjacência do grafo Euleriano encontrado ---
+v1: 2, 4
+v2: 1, 8
+v3: 7, 8, 9, 10
+v4: 1, 6
+v5: 7, 8
+v6: 4, 8
+v7: 3, 5, 8, 9
+v8: 2, 3, 5, 6, 7, 10
+v9: 3, 7
+v10: 3, 8
+
+--- Matriz de adjacência do grafo Euleriano encontrado (1 = aresta) ---
+    1  2  3  4  5  6  7  8  9 10
+ 1  .  1  .  1  .  .  .  .  .  .
+ 2  1  .  .  .  .  .  .  1  .  .
+ 3  .  .  .  .  .  .  1  1  1  1
+ 4  1  .  .  .  .  1  .  .  .  .
+ 5  .  .  .  .  .  .  1  1  .  .
+ 6  .  .  .  1  .  .  .  1  .  .
+ 7  .  .  1  .  1  .  .  1  1  .
+ 8  .  1  1  .  1  1  1  .  .  1
+ 9  .  .  1  .  .  .  1  .  .  .
+10  .  .  1  .  .  .  .  1  .  .
+
+--- Propriedades do grafo Euleriano encontrado ---
+Conexo: sim
+Todos os graus são pares: sim
+Euleriano: sim
+
+--- Circuito de Euler do grafo encontrado ---
+1 -> 2 -> 8 -> 3 -> 7 -> 5 -> 8 -> 7 -> 9 -> 3 -> 10 -> 8 -> 6 -> 4 -> 1
+
+--- Validação automática do circuito ---
+Resultado: OK
+
+=================================
+ETAPA 2: EXPERIMENTO DE PROPORÇÃO
+=================================
+
+[debug] Iniciando experimento de proporção com 1000 grafos...
+[debug] Processando grafo 250/1000...
+[debug] Processando grafo 500/1000...
+[debug] Processando grafo 750/1000...
+[debug] Processando grafo 1000/1000...
+[debug] Experimento de proporção finalizado. Calculando tempos...
+
+[debug] Experimento concluído. Imprimindo resultado da etapa 2...
+
+--- Tempos do experimento com 1000 grafos ---
+Tempo de geração dos grafos: 0.0133 s
+Tempo total (geração + verificação): 0.0520 s
+
+--- Contagem de propriedades nos 1000 grafos gerados ---
+Grafos com todos os graus pares: 0
+Grafos conexos (vértices de grau não nulo): 935
+Grafos vazios (rede inválida): 0
+
+--- Proporção de grafos Eulerianos ---
+Grafos Eulerianos: 0 de 1000
+Proporção: 0.000
+
+[debug] Programa finalizado.
